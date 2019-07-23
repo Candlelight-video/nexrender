@@ -48,6 +48,7 @@ const upload = (job, settings, src, params) => {
             if (err) throw err;
             con.end();
         });
+		resolve(job);
     })
 }
 
